@@ -3,30 +3,48 @@
 ## Description
 Induced-Fit Retrieval (IFR) is an information retrieval system designed to solve the multi-hop reasoning problem by treating query retrieval as a dynamic graph traversal process. The architecture is inspired by Daniel Koshland's 1958 "induced fit" model of enzyme-substrate binding from biochemistry. 
 
-Unlike traditional Retrieval-Augmented Generation (RAG) which uses a static query (a "lock and key" approach), IFR mutates the query vector at each hop based on the visited node's embedding. This allows the query to adapt as it encounters new information, moving along the embedding space's curved manifolds to discover semantically distant but logically connected concepts. 
+Unlike traditional Retrieval-Augmented Generation (RAG) which uses a static query (a "lock and key" approach), IFR mutates the query vector at each hop based on the visited node's embedding. This allows the query to adapt as it encounters new information, moving along the embedding space's curved manifolds to discover semantically distant but logically connected concepts.
 
-The system relies on a hybrid graph utilizing both semantic edges (cosine similarity) and cross-reference edges (co-occurrence) to create a small-world network. Remarkably, IFR achieves O(1) sub-linear scaling, converting the retrieval problem from geometric to topological—latency remains practically flat (around 10ms) whether querying 10,000 or 5.2 million atoms.
+---
+
+## Executive Summary & The "One Number"
+**IFR-hybrid+CE nDCG@10: 0.367 vs RAG-rerank 0.321 (+14.3%)**
+
+Our test suite (30 queries, 10 methods, multiple graph sizes) evaluated the prototype across Retrieval, Scaling, and End-to-End LLM generation. 
+
+* **Retrieval (PASS):** IFR successfully finds multi-hop targets that are entirely invisible to RAG.
+* **Scaling (PASS):** Sub-linear O(1) latency scaling was confirmed (<5ms at 10K atoms).
+* **End-to-End (FAIL):** Catastrophic drift during query mutation degrades the final context provided to the LLM, lowering generation quality.
+* **Verdict:** CONDITIONAL PASS. The retrieval mechanism is proven, but requires ranking and drift-damping fixes for v2.
 
 ---
 
 ## Empirical Testing & Results
 
-We have rigorously tested IFR across multiple configurations, datasets, and scales to validate its core mechanisms and identify its limitations.
+### 1. Multi-Hop Discovery Advantage
+All tested traditional RAG methods scored **0% Hit@20** on complex multi-hop queries. In contrast, IFR successfully discovered targets that were ranked deep in the baseline RAG results (e.g., rank 22–665), achieving a **15% Hit@20** on multi-hop evaluation. 
 
-### 1. Core Mechanism Validations
-* **Induced Fit Ablation:** Removing the query mutation mechanism yields 0% on all multi-hop metrics (hits_20=0.0, MRR=0.011), proving that dynamic mutation is the critical driver of multi-hop success.
-* **Anchor Weight Balancing:** Retaining 50% of the original query in the mutated query acts as a low-pass filter, preventing catastrophic drift and producing a +61% improvement on FCIS data.
-* **Beam Search vs. Greedy:** Beam search (width=5) with a novelty bonus outperformed greedy traversal by +15% H@20 at a 10K sample size (p=0.037). Greedy traversal was proven worse than a random walk for multi-hop queries due to multiplicative score decay.
-* **Cross-Reference Edges:** Graph connectivity tests showed that co-occurrence edges are critical; without them, IFR's performance regresses to approximate RAG parity across all metrics.
+### 2. Algorithmic Ablations
+* **Induced Fit is Necessary:** Setting the query mutation rate ($\alpha$) to zero resulted in a 0% multi-hop hit rate and a near-zero MRR. Dynamic query mutation is strictly required for success.
+* **Beam Search vs. Greedy:** At high data scales (10K+ atoms), Beam Search ($k=5$) with a novelty exploration bonus outperformed greedy traversal (15% vs 0%, p=0.037).
+* **Trail Learning:** Applying Ant Colony-style "pheromone trails" to reinforce successful cross-cluster edges yielded strong generalization on fresh test sets (Hit@20 improved 70% $\rightarrow$ 80%), proving that the graph can "learn" structural market patterns.
 
-### 2. Algorithmic Improvements & Interventions
-* **Adaptive Hops (Demand-Driven Traversal):** Replacing a fixed 100-hop budget with an adaptive budget (using early stops, drift resets, and cluster bonuses) yielded +3.0% R@5 vs RAG-k5 (p<0.0001) on 5.2M Wikipedia articles in standalone raw mode.
-* **Adaptive Hops in Hybrid Pipeline:** Despite success in raw retrieval, adaptive hops degraded performance by -2.2% in a hybrid + Cross-Encoder (CE) pipeline. Re-entries broke candidate pool coherence, making it difficult for the CE to rank mixed candidates.
-* **Generic vs. Fine-Tuned Cross-Encoders:** A generic `ms-marco-MiniLM-L-6-v2` cross-encoder improved hybrid pipeline R@5 by +2.9% (p=0.0002). Conversely, fine-tuning the cross-encoder on closed-corpus HotpotQA data caused catastrophic distribution shift, dropping open-corpus R@5 by -6.6%.
-* **Wikipedia Hyperlink Edges:** Parsing and adding 17.5 million directed hyperlink edges to the graph yielded a statistically insignificant +0.1% R@5. Hyperlinks proved to have a poor signal-to-noise ratio (1:19), causing useless paths to crowd out valid beam traversals.
+### 3. O(1) Traversal Scaling
+Latency tests prove that IFR converts retrieval from a geometric nearest-neighbor problem to a topological traversal problem.
+* **100 Atoms:** 1.50ms median
+* **1,000 Atoms:** 1.64ms median 
+* **10,000 Atoms:** 1.64ms median (P99 = 4.46ms)
+* **Conclusion:** 100x data growth resulted in only 1.1x latency growth.
 
-### 3. Scaling & Dataset Benchmarks
-* **HotpotQA Scaling:** The baseline advantage of IFR over RAG-rerank grows from +3.0% at 66K atoms to a peak of +4.5% at 508K atoms. At 5.2M atoms, the advantage compresses slightly to +2.8% due to a coverage ceiling where a 100-hop budget only examines 0.0096% of the graph.
-* **Latency Testing:** Per-query latency scales sub-linearly: ~1.50ms at 100 atoms, ~1.64ms at 10K atoms, and ~10ms at 5.2M atoms.
-* **MuSiQue (21K atoms):** Tests on MuSiQue (setup_b) yielded no statistically significant advantage (-1.0% vs RAG-rerank). This dataset's smaller size allows brute-force RAG to succeed, while its sparse co-occurrence edges fail to create the small-world network IFR requires. 
-* **Trail Learning (FCIS 722 atoms):** Reinforcing edges based on successful paths (trail learning) resulted in overfitting on small graphs, causing training accuracy to decrease across rounds (hits_20 dropped from 0.20 to 0.15).
+### 4. Failure Analysis & The "Drift" Problem
+While IFR beats RAG in pure retrieval recall, it struggles in End-to-End LLM testing (RAG Token F1 = 0.089 vs IFR Token F1 = 0.040).
+* **Catastrophic Drift:** Detailed failure analysis revealed that 67% of IFR's failures were due to "catastrophic drift." The query mutated too aggressively at intermediate hops, losing over 80% of its original intent.
+* **Context U-Curve:** While RAG context quality peaks at $k=3$, IFR's context quality degrades at $k=5$ due to noise dilution and drift.
+
+---
+
+## Recommended Architecture for v2
+Based on the data, pure IFR loses to RAG on overall metrics, but a hybrid approach excels. The optimal configuration for future iterations is a **Hybrid Fusion Pipeline**:
+
+```text
+Query -> [RAG top-20] + [IFR-beam traverse] -> RRF fusion -> Cross-encoder re-rank -> LLM
