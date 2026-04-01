@@ -1,0 +1,66 @@
+{
+  "nodes": 722,
+  "edges": 9946,
+  "avg_degree": 13.77562326869806,
+  "max_degree": 30,
+  "min_degree": 4,
+  "clustering_coefficient": 0.3410562696922622,
+  "connected_components": 1,
+  "largest_component": 722,
+  "diameter_estimate": 7,
+  "edge_types": {
+    "CROSS-REF": 3820,
+    "SEMANTIC": 3820,
+    "STRUCTURAL": 2292,
+    "INFERRED": 14
+  },
+  "hubs_count": 54,
+  "top_hubs": [
+    {
+      "id": "spec-f37aa2525345",
+      "degree": 30
+    },
+    {
+      "id": "spec-5f1262caa0b8",
+      "degree": 30
+    },
+    {
+      "id": "spec-635bfcccd840",
+      "degree": 30
+    },
+    {
+      "id": "spec-d431667d8b33",
+      "degree": 30
+    },
+    {
+      "id": "spec-c62167295697",
+      "degree": 30
+    },
+    {
+      "id": "spec-e6fad5c5d3f7",
+      "degree": 30
+    },
+    {
+      "id": "spec-a445a0a4ef8b",
+      "degree": 30
+    },
+    {
+      "id": "spec-ed4882b0168f",
+      "degree": 30
+    },
+    {
+      "id": "spec-cabc520f9ee3",
+      "degree": 30
+    },
+    {
+      "id": "spec-a6ef8a500316",
+      "degree": 30
+    }
+  ],
+  "degree_percentiles": {
+    "p25": 8.0,
+    "p50": 11.0,
+    "p75": 18.0,
+    "p95": 29.0
+  }
+}
