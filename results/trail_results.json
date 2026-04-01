@@ -1,0 +1,124 @@
+{
+  "diagnosis": "ANOMALOUS",
+  "fresh_train": {
+    "hits_1": 0.0,
+    "hits_5": 0.05,
+    "hits_10": 0.05,
+    "hits_20": 0.2,
+    "mrr": 0.022933506613403078
+  },
+  "fresh_test": {
+    "hits_1": 0.6,
+    "hits_5": 0.7,
+    "hits_10": 0.7,
+    "hits_20": 0.7,
+    "mrr": 0.6303524009184387
+  },
+  "trail_test": {
+    "hits_1": 0.5,
+    "hits_5": 0.7,
+    "hits_10": 0.7,
+    "hits_20": 0.8,
+    "mrr": 0.593681917211329
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "train": {
+        "hits_1": 0.0,
+        "hits_5": 0.05,
+        "hits_10": 0.05,
+        "hits_20": 0.2,
+        "mrr": 0.022933506613403078
+      },
+      "trail_metrics": {
+        "highways_created": 30,
+        "total_edges_used": 803,
+        "mean_weight_shift": 0.043576731341827206,
+        "rounds_completed": 20
+      }
+    },
+    {
+      "round": 2,
+      "train": {
+        "hits_1": 0.0,
+        "hits_5": 0.0,
+        "hits_10": 0.1,
+        "hits_20": 0.2,
+        "mrr": 0.024087190837601007
+      },
+      "trail_metrics": {
+        "highways_created": 143,
+        "total_edges_used": 1028,
+        "mean_weight_shift": 0.060224758003981256,
+        "rounds_completed": 40
+      }
+    },
+    {
+      "round": 3,
+      "train": {
+        "hits_1": 0.0,
+        "hits_5": 0.0,
+        "hits_10": 0.05,
+        "hits_20": 0.15,
+        "mrr": 0.01855001714053745
+      },
+      "trail_metrics": {
+        "highways_created": 248,
+        "total_edges_used": 1167,
+        "mean_weight_shift": 0.07089622080271848,
+        "rounds_completed": 60
+      }
+    }
+  ],
+  "final_trail_metrics": {
+    "highways_created": 248,
+    "total_edges_used": 1167,
+    "mean_weight_shift": 0.07089622080271848,
+    "rounds_completed": 60
+  },
+  "decay_verification": [
+    {
+      "name": "Phase 1: 30d",
+      "phase": "PROBATIONARY",
+      "actual": 0.5,
+      "expected": 0.5,
+      "passed": true
+    },
+    {
+      "name": "Phase 1: 60d",
+      "phase": "PROBATIONARY",
+      "actual": 0.25,
+      "expected": 0.25,
+      "passed": true
+    },
+    {
+      "name": "Phase 2: use=5",
+      "phase": "ESTABLISHED",
+      "actual": 0.5670579547236292,
+      "expected": 0.5670579547236292,
+      "passed": true
+    },
+    {
+      "name": "Phase 2: use=30",
+      "phase": "ESTABLISHED",
+      "actual": 0.5,
+      "expected": 0.5,
+      "passed": true
+    },
+    {
+      "name": "Phase 3: age=100",
+      "phase": "AGED_PROBATIONARY",
+      "actual": 0.3,
+      "expected": 0.3,
+      "passed": true
+    },
+    {
+      "name": "Phase 3: delete?",
+      "phase": "AGED_PROBATIONARY",
+      "actual": 0.026999999999999996,
+      "expected": 0.026999999999999996,
+      "passed": true
+    }
+  ]
+}
