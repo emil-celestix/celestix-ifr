@@ -1,0 +1,1707 @@
+{
+  "summary": {
+    "IFR-full": {
+      "ndcg_10": 0.01505149978319906,
+      "mrr": 0.009848083377495143,
+      "hits_1": 0.0,
+      "hits_3": 0.0,
+      "hits_5": 0.0,
+      "hits_10": 0.05,
+      "hits_20": 0.1
+    },
+    "IFR-no-IF": {
+      "ndcg_10": 0.0,
+      "mrr": 0.011268315018315017,
+      "hits_1": 0.0,
+      "hits_3": 0.0,
+      "hits_5": 0.0,
+      "hits_10": 0.0,
+      "hits_20": 0.0
+    },
+    "IFR-greedy(k=1)": {
+      "ndcg_10": 0.03010299956639812,
+      "mrr": 0.0235007215007215,
+      "hits_1": 0.0,
+      "hits_3": 0.0,
+      "hits_5": 0.0,
+      "hits_10": 0.1,
+      "hits_20": 0.2
+    },
+    "IFR-no-decay": {
+      "ndcg_10": 0.01505149978319906,
+      "mrr": 0.009848083377495143,
+      "hits_1": 0.0,
+      "hits_3": 0.0,
+      "hits_5": 0.0,
+      "hits_10": 0.05,
+      "hits_20": 0.1
+    },
+    "IFR-no-trails": {
+      "ndcg_10": 0.01505149978319906,
+      "mrr": 0.009848083377495143,
+      "hits_1": 0.0,
+      "hits_3": 0.0,
+      "hits_5": 0.0,
+      "hits_10": 0.05,
+      "hits_20": 0.1
+    },
+    "IFR-no-novelty": {
+      "ndcg_10": 0.01934264036172708,
+      "mrr": 0.017323232323232324,
+      "hits_1": 0.0,
+      "hits_3": 0.0,
+      "hits_5": 0.05,
+      "hits_10": 0.05,
+      "hits_20": 0.15
+    },
+    "IFR-random-walk": {
+      "ndcg_10": 0.016666666666666666,
+      "mrr": 0.014307507900185246,
+      "hits_1": 0.0,
+      "hits_3": 0.0,
+      "hits_5": 0.0,
+      "hits_10": 0.05,
+      "hits_20": 0.1
+    }
+  },
+  "per_query": {
+    "IFR-full": [
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 83,
+        "query_id": "2H-1"
+      },
+      {
+        "ndcg_10": 0.3010299956639812,
+        "mrr": 0.1111111111111111,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 1,
+        "hits_20": 1,
+        "visited": 83,
+        "query_id": "2H-2"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.058823529411764705,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 1,
+        "visited": 82,
+        "query_id": "2H-3"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 76,
+        "query_id": "2H-4"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 83,
+        "query_id": "2H-5"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 83,
+        "query_id": "2H-6"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 75,
+        "query_id": "2H-7"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 79,
+        "query_id": "2H-8"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 75,
+        "query_id": "3H-1"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 97,
+        "query_id": "3H-2"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 71,
+        "query_id": "3H-3"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 85,
+        "query_id": "3H-4"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 85,
+        "query_id": "3H-5"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 71,
+        "query_id": "3H-6"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 75,
+        "query_id": "3H-7"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 85,
+        "query_id": "4H-1"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 70,
+        "query_id": "4H-2"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 82,
+        "query_id": "4H-3"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.02702702702702703,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 79,
+        "query_id": "CD-1"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 83,
+        "query_id": "CD-2"
+      }
+    ],
+    "IFR-no-IF": [
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.02857142857142857,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 78,
+        "query_id": "2H-1"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.03571428571428571,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 78,
+        "query_id": "2H-2"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.047619047619047616,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 80,
+        "query_id": "2H-3"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 93,
+        "query_id": "2H-4"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.016666666666666666,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 78,
+        "query_id": "2H-5"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 78,
+        "query_id": "2H-6"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 82,
+        "query_id": "2H-7"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.038461538461538464,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 89,
+        "query_id": "2H-8"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 78,
+        "query_id": "3H-1"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 74,
+        "query_id": "3H-2"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 80,
+        "query_id": "3H-3"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 76,
+        "query_id": "3H-4"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 82,
+        "query_id": "3H-5"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 80,
+        "query_id": "3H-6"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 78,
+        "query_id": "3H-7"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.025,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 73,
+        "query_id": "4H-1"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 71,
+        "query_id": "4H-2"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 80,
+        "query_id": "4H-3"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.03333333333333333,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 83,
+        "query_id": "CD-1"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 78,
+        "query_id": "CD-2"
+      }
+    ],
+    "IFR-greedy(k=1)": [
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 50,
+        "query_id": "2H-1"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 50,
+        "query_id": "2H-2"
+      },
+      {
+        "ndcg_10": 0.3010299956639812,
+        "mrr": 0.1111111111111111,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 1,
+        "hits_20": 1,
+        "visited": 50,
+        "query_id": "2H-3"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 50,
+        "query_id": "2H-4"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.04,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 50,
+        "query_id": "2H-5"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 50,
+        "query_id": "2H-6"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 50,
+        "query_id": "2H-7"
+      },
+      {
+        "ndcg_10": 0.3010299956639812,
+        "mrr": 0.1111111111111111,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 1,
+        "hits_20": 1,
+        "visited": 50,
+        "query_id": "2H-8"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 50,
+        "query_id": "3H-1"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 50,
+        "query_id": "3H-2"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 50,
+        "query_id": "3H-3"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 50,
+        "query_id": "3H-4"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 50,
+        "query_id": "3H-5"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 50,
+        "query_id": "3H-6"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 50,
+        "query_id": "3H-7"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.07142857142857142,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 1,
+        "visited": 50,
+        "query_id": "4H-1"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 50,
+        "query_id": "4H-2"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 50,
+        "query_id": "4H-3"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.09090909090909091,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 1,
+        "visited": 50,
+        "query_id": "CD-1"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.045454545454545456,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 50,
+        "query_id": "CD-2"
+      }
+    ],
+    "IFR-no-decay": [
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 83,
+        "query_id": "2H-1"
+      },
+      {
+        "ndcg_10": 0.3010299956639812,
+        "mrr": 0.1111111111111111,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 1,
+        "hits_20": 1,
+        "visited": 83,
+        "query_id": "2H-2"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.058823529411764705,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 1,
+        "visited": 82,
+        "query_id": "2H-3"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 76,
+        "query_id": "2H-4"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 83,
+        "query_id": "2H-5"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 83,
+        "query_id": "2H-6"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 75,
+        "query_id": "2H-7"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 79,
+        "query_id": "2H-8"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 75,
+        "query_id": "3H-1"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 97,
+        "query_id": "3H-2"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 71,
+        "query_id": "3H-3"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 85,
+        "query_id": "3H-4"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 85,
+        "query_id": "3H-5"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 71,
+        "query_id": "3H-6"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 75,
+        "query_id": "3H-7"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 85,
+        "query_id": "4H-1"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 70,
+        "query_id": "4H-2"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 82,
+        "query_id": "4H-3"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.02702702702702703,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 79,
+        "query_id": "CD-1"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 83,
+        "query_id": "CD-2"
+      }
+    ],
+    "IFR-no-trails": [
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 83,
+        "query_id": "2H-1"
+      },
+      {
+        "ndcg_10": 0.3010299956639812,
+        "mrr": 0.1111111111111111,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 1,
+        "hits_20": 1,
+        "visited": 83,
+        "query_id": "2H-2"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.058823529411764705,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 1,
+        "visited": 82,
+        "query_id": "2H-3"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 76,
+        "query_id": "2H-4"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 83,
+        "query_id": "2H-5"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 83,
+        "query_id": "2H-6"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 75,
+        "query_id": "2H-7"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 79,
+        "query_id": "2H-8"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 75,
+        "query_id": "3H-1"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 97,
+        "query_id": "3H-2"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 71,
+        "query_id": "3H-3"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 85,
+        "query_id": "3H-4"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 85,
+        "query_id": "3H-5"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 71,
+        "query_id": "3H-6"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 75,
+        "query_id": "3H-7"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 85,
+        "query_id": "4H-1"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 70,
+        "query_id": "4H-2"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 82,
+        "query_id": "4H-3"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.02702702702702703,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 79,
+        "query_id": "CD-1"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 83,
+        "query_id": "CD-2"
+      }
+    ],
+    "IFR-no-novelty": [
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 99,
+        "query_id": "2H-1"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.09090909090909091,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 1,
+        "visited": 29,
+        "query_id": "2H-2"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.05555555555555555,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 1,
+        "visited": 79,
+        "query_id": "2H-3"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 93,
+        "query_id": "2H-4"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 99,
+        "query_id": "2H-5"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 99,
+        "query_id": "2H-6"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 74,
+        "query_id": "2H-7"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 72,
+        "query_id": "2H-8"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 77,
+        "query_id": "3H-1"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 77,
+        "query_id": "3H-2"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 74,
+        "query_id": "3H-3"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 76,
+        "query_id": "3H-4"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 78,
+        "query_id": "3H-5"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 74,
+        "query_id": "3H-6"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 77,
+        "query_id": "3H-7"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 81,
+        "query_id": "4H-1"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 74,
+        "query_id": "4H-2"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 79,
+        "query_id": "4H-3"
+      },
+      {
+        "ndcg_10": 0.38685280723454163,
+        "mrr": 0.2,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 1,
+        "hits_10": 1,
+        "hits_20": 1,
+        "visited": 80,
+        "query_id": "CD-1"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 99,
+        "query_id": "CD-2"
+      }
+    ],
+    "IFR-random-walk": [
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 50,
+        "query_id": "2H-1"
+      },
+      {
+        "ndcg_10": 0.3333333333333333,
+        "mrr": 0.14285714285714285,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 1,
+        "hits_20": 1,
+        "visited": 50,
+        "query_id": "2H-2"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 50,
+        "query_id": "2H-3"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.02631578947368421,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 50,
+        "query_id": "2H-4"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.02857142857142857,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 50,
+        "query_id": "2H-5"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 50,
+        "query_id": "2H-6"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 50,
+        "query_id": "2H-7"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 50,
+        "query_id": "2H-8"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 50,
+        "query_id": "3H-1"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.021739130434782608,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 50,
+        "query_id": "3H-2"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 50,
+        "query_id": "3H-3"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 50,
+        "query_id": "3H-4"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 50,
+        "query_id": "3H-5"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 50,
+        "query_id": "3H-6"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 50,
+        "query_id": "3H-7"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 50,
+        "query_id": "4H-1"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 50,
+        "query_id": "4H-2"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 50,
+        "query_id": "4H-3"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.06666666666666667,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 1,
+        "visited": 50,
+        "query_id": "CD-1"
+      },
+      {
+        "ndcg_10": 0.0,
+        "mrr": 0.0,
+        "hits_1": 0,
+        "hits_3": 0,
+        "hits_5": 0,
+        "hits_10": 0,
+        "hits_20": 0,
+        "visited": 50,
+        "query_id": "CD-2"
+      }
+    ]
+  },
+  "bootstrap": {
+    "IFR-no-IF": {
+      "delta_ndcg": 0.01505149978319906,
+      "delta_mrr": -0.0014202316408198738,
+      "delta_h3_pct": 0.0,
+      "delta_h10_pct": 5.0,
+      "p_value": 0.369,
+      "ci_95": [
+        0.0,
+        0.04515449934959718
+      ],
+      "cohens_d": 0.32444284226152514,
+      "significant": false
+    },
+    "IFR-greedy(k=1)": {
+      "delta_ndcg": -0.01505149978319906,
+      "delta_mrr": -0.013652638123226358,
+      "delta_h3_pct": 0.0,
+      "delta_h10_pct": -5.0,
+      "p_value": 0.8083,
+      "ci_95": [
+        -0.06058228662737588,
+        0.03010299956639812
+      ],
+      "cohens_d": -0.19069251784911848,
+      "significant": false
+    },
+    "IFR-no-decay": {
+      "delta_ndcg": 0.0,
+      "delta_mrr": 0.0,
+      "delta_h3_pct": 0.0,
+      "delta_h10_pct": 0.0,
+      "p_value": 1.0,
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "cohens_d": 0.0,
+      "significant": "False"
+    },
+    "IFR-no-trails": {
+      "delta_ndcg": 0.0,
+      "delta_mrr": 0.0,
+      "delta_h3_pct": 0.0,
+      "delta_h10_pct": 0.0,
+      "p_value": 1.0,
+      "ci_95": [
+        0.0,
+        0.0
+      ],
+      "cohens_d": 0.0,
+      "significant": "False"
+    },
+    "IFR-no-novelty": {
+      "delta_ndcg": -0.0042911405785280195,
+      "delta_mrr": -0.0074751489457371804,
+      "delta_h3_pct": 0.0,
+      "delta_h10_pct": 0.0,
+      "p_value": 0.6546,
+      "ci_95": [
+        -0.05802792108518125,
+        0.04515449934959718
+      ],
+      "cohens_d": -0.056805110381669216,
+      "significant": "False"
+    },
+    "IFR-random-walk": {
+      "delta_ndcg": -0.0016151668834676058,
+      "delta_mrr": -0.004459424522690103,
+      "delta_h3_pct": 0.0,
+      "delta_h10_pct": 0.0,
+      "p_value": 1.0,
+      "ci_95": [
+        -0.0048455006504028175,
+        0.0
+      ],
+      "cohens_d": -0.023334589643634447,
+      "significant": "False"
+    }
+  },
+  "notes": {
+    "no_decay": "Static graph — no decay to test. Same as full.",
+    "no_trails": "Single-pass test — trails affect learning not retrieval. Same as full."
+  }
+}
