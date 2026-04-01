@@ -1,0 +1,182 @@
+{
+  "722": {
+    "greedy": {
+      "hits_1": 0.0,
+      "hits_5": 0.0,
+      "hits_10": 0.0,
+      "hits_20": 0.0,
+      "mrr": 0.0011627906976744186,
+      "latency_total_s": 0.4
+    },
+    "beam+novelty": {
+      "hits_1": 0.0,
+      "hits_5": 0.0,
+      "hits_10": 0.0,
+      "hits_20": 0.0,
+      "mrr": 0.0015182186234817814,
+      "latency_total_s": 0.8
+    },
+    "random-walk": {
+      "hits_1": 0.0,
+      "hits_5": 0.0,
+      "hits_10": 0.0,
+      "hits_20": 0.0,
+      "mrr": 0.0,
+      "latency_total_s": 0.3
+    },
+    "mmr": {
+      "hits_1": 0.0,
+      "hits_5": 0.0,
+      "hits_10": 0.0,
+      "hits_20": 0.0,
+      "mrr": 0.004621268656716418,
+      "latency_total_s": 1.1
+    },
+    "sa": {
+      "hits_1": 0.0,
+      "hits_5": 0.0,
+      "hits_10": 0.0,
+      "hits_20": 0.0,
+      "mrr": 0.005492152868968418,
+      "latency_total_s": 0.5
+    },
+    "mcts": {
+      "hits_1": 0.0,
+      "hits_5": 0.0,
+      "hits_10": 0.0,
+      "hits_20": 0.0,
+      "mrr": 0.0016671297582661851,
+      "latency_total_s": 4.6
+    },
+    "mmr+sa": {
+      "hits_1": 0.0,
+      "hits_5": 0.0,
+      "hits_10": 0.0,
+      "hits_20": 0.05,
+      "mrr": 0.006740687494464416,
+      "latency_total_s": 1.3
+    },
+    "mcts+mmr+sa": {
+      "hits_1": 0.0,
+      "hits_5": 0.0,
+      "hits_10": 0.0,
+      "hits_20": 0.0,
+      "mrr": 0.002710871935896828,
+      "latency_total_s": 4.9
+    },
+    "beam+nov+mmr": {
+      "hits_1": 0.0,
+      "hits_5": 0.0,
+      "hits_10": 0.0,
+      "hits_20": 0.0,
+      "mrr": 0.0022611025047293235,
+      "latency_total_s": 1.3
+    },
+    "beam+nov+mmr-0.4": {
+      "hits_1": 0.0,
+      "hits_5": 0.0,
+      "hits_10": 0.0,
+      "hits_20": 0.0,
+      "mrr": 0.001658377327979236,
+      "latency_total_s": 1.4
+    },
+    "beam+nov+mmr-0.8": {
+      "hits_1": 0.0,
+      "hits_5": 0.0,
+      "hits_10": 0.0,
+      "hits_20": 0.0,
+      "mrr": 0.0017859828545645964,
+      "latency_total_s": 1.2
+    }
+  },
+  "10000": {
+    "greedy": {
+      "hits_1": 0.0,
+      "hits_5": 0.0,
+      "hits_10": 0.0,
+      "hits_20": 0.0,
+      "mrr": 0.0005434782608695652,
+      "latency_total_s": 0.7
+    },
+    "beam+novelty": {
+      "hits_1": 0.0,
+      "hits_5": 0.0,
+      "hits_10": 0.0,
+      "hits_20": 0.0,
+      "mrr": 0.00041322314049586776,
+      "latency_total_s": 3.3
+    },
+    "random-walk": {
+      "hits_1": 0.0,
+      "hits_5": 0.0,
+      "hits_10": 0.0,
+      "hits_20": 0.0,
+      "mrr": 0.0,
+      "latency_total_s": 0.3
+    },
+    "mmr": {
+      "hits_1": 0.0,
+      "hits_5": 0.0,
+      "hits_10": 0.05,
+      "hits_20": 0.05,
+      "mrr": 0.007783882783882784,
+      "latency_total_s": 2.5
+    },
+    "sa": {
+      "hits_1": 0.0,
+      "hits_5": 0.0,
+      "hits_10": 0.0,
+      "hits_20": 0.0,
+      "mrr": 0.000641025641025641,
+      "latency_total_s": 0.9
+    },
+    "mcts": {
+      "hits_1": 0.0,
+      "hits_5": 0.0,
+      "hits_10": 0.0,
+      "hits_20": 0.0,
+      "mrr": 0.0005494505494505495,
+      "latency_total_s": 65.7
+    },
+    "mmr+sa": {
+      "hits_1": 0.0,
+      "hits_5": 0.05,
+      "hits_10": 0.05,
+      "hits_20": 0.05,
+      "mrr": 0.01,
+      "latency_total_s": 2.0
+    },
+    "mcts+mmr+sa": {
+      "hits_1": 0.0,
+      "hits_5": 0.0,
+      "hits_10": 0.0,
+      "hits_20": 0.0,
+      "mrr": 0.0014285714285714286,
+      "latency_total_s": 18.0
+    },
+    "beam+nov+mmr": {
+      "hits_1": 0.0,
+      "hits_5": 0.0,
+      "hits_10": 0.0,
+      "hits_20": 0.0,
+      "mrr": 0.0005825274226001168,
+      "latency_total_s": 3.7
+    },
+    "beam+nov+mmr-0.4": {
+      "hits_1": 0.0,
+      "hits_5": 0.0,
+      "hits_10": 0.05,
+      "hits_20": 0.05,
+      "mrr": 0.008779761904761905,
+      "latency_total_s": 1.9
+    },
+    "beam+nov+mmr-0.8": {
+      "hits_1": 0.0,
+      "hits_5": 0.0,
+      "hits_10": 0.0,
+      "hits_20": 0.0,
+      "mrr": 0.0003125,
+      "latency_total_s": 4.4
+    }
+  }
+}
