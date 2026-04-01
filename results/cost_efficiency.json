@@ -1,0 +1,6 @@
+{
+  "rag_correct": 4,
+  "ifr_correct": 2,
+  "cost_per_query": 0.0,
+  "note": "Ollama local = $0"
+}
